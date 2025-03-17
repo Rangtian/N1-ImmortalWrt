@@ -1,4 +1,5 @@
 name: Build ImmortalWrt-24.10 for N1
+# Packages used by nantayo: sudo -E apt-get -qq install -y $(curl -fsSL https://raw.githubusercontent.com/nantayo/My-Pkg/master/2410)
 
 on:
   workflow_dispatch:
@@ -7,8 +8,8 @@ on:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
-  schedule:
-    - cron: "0 0 1,16 * *"
+  # schedule:
+    # - cron: "0 0 1,16 * *"
 
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
@@ -42,7 +43,7 @@ jobs:
         DEBIAN_FRONTEND: noninteractive
       run: |
         sudo -E apt-get -qq update -y
-        sudo -E apt-get -qq install -y $(curl -fsSL https://raw.githubusercontent.com/nantayo/My-Pkg/master/2410)
+        sudo -E apt-get -qq install -y $(curl -fsSL https://raw.githubusercontent.com/Rangtian/N1-ImmortalWrt/master/.github/workflows/2410)
         sudo -E apt-get -qq autoremove --purge
         sudo -E apt-get -qq clean
         sudo timedatectl set-timezone "$TZ"
@@ -100,7 +101,7 @@ jobs:
         PACKAGE_SOC: diy
         GZIP_IMGS: .xz
         SCRIPT_DIY_PATH: N1/mk_s905d_n1.sh
-        WHOAMI: nantayo
+        WHOAMI: Rangtian
         SW_FLOWOFFLOAD: 0
         SFE_FLOW: 0
 
@@ -115,7 +116,7 @@ jobs:
         body: |
           首次使用建议全新刷写
           * 基本信息
-          IP: 192.168.2.2
+          IP: 10.0.0.6
           账户: root
           密码: password
 

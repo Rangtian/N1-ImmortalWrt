@@ -10,6 +10,7 @@ config interface 'lan'
 	option device 'eth0'
 	option ipaddr '10.0.0.6'
 	option gateway '10.0.0.1'
+        option dns '10.0.0.1'
 	option delegate '0'
 
 config globals 'globals'

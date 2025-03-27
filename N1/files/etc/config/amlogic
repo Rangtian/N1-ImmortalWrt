@@ -12,6 +12,6 @@ config amlogic 'config'
 # Available frequencies: 100000 250000 500000 667000 1000000 1200000 1512000
 # Available governor: powersave conservative ondemand performance
 config settings 'armcpu'
-	option governor0 'performance'
+	option governor0 'ondemand'
 	option minfreq0 '100000'
 	option maxfreq0 '1512000'

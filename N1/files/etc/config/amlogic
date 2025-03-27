@@ -9,6 +9,7 @@ config amlogic 'config'
 	option amlogic_write_bootloader '1'
 	option amlogic_shared_fstype 'ext4'
 
+# Available frequencies: 100000 250000 500000 667000 1000000 1200000 1512000
 config settings 'armcpu'
 	option governor0 'performance'
 	option minfreq0 '100000'

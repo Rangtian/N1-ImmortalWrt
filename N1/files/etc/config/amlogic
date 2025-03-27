@@ -10,8 +10,8 @@ config amlogic 'config'
 	option amlogic_shared_fstype 'ext4'
 
 # Available frequencies: 100000 250000 500000 667000 1000000 1200000 1512000
-# Available governor: powersave conservative ondemand performance
+# Available governor: ondemand performance schedutil
 config settings 'armcpu'
-	option governor0 'ondemand'
+	option governor0 'schedutil'
 	option minfreq0 '100000'
 	option maxfreq0 '1512000'

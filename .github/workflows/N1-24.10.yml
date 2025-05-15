@@ -42,7 +42,7 @@ jobs:
         DEBIAN_FRONTEND: noninteractive
       run: |
         sudo -E apt-get -qq update -y
-        sudo -E apt-get -qq install -y $(curl -fsSL https://raw.githubusercontent.com/Rangtian/N1-ImmortalWrt/master/.github/workflows/2410)#https://raw.githubusercontent.com/nantayo/My-Pkg/master/2410 
+        sudo -E apt-get -qq install -y $(curl -fsSL https://raw.githubusercontent.com/Rangtian/N1-ImmortalWrt/master/.github/workflows/2410)
         sudo -E apt-get -qq autoremove --purge
         sudo -E apt-get -qq clean
         sudo timedatectl set-timezone "$TZ"

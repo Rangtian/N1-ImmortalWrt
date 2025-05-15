@@ -3,6 +3,7 @@
 固件包含默认皮肤、完整 IPv6 支持，以及下列 luci-app：<br>
 [luci-app-amlogic](https://github.com/ophub/luci-app-amlogic)：系统更新、文件传输、CPU 调频等。<br>
 [luci-app-passwall](https://github.com/xiaorouji/openwrt-passwall)：科学上网<br>
+[luci-app-openclash](https://github.com/vernesong/OpenClash)：科学上网<br>
 ***
 # 推荐教程
 不良林：[软路由篇](https://www.youtube.com/playlist?list=PL5TbbtexT8T293fBi4i5MOf4OjdLQ3hUa)，[代理进阶篇](https://www.youtube.com/playlist?list=PL5TbbtexT8T3JJdJAy73A0T2NXZL2JEJY)。<br>

@@ -106,10 +106,9 @@ jobs:
 
     - name: Rename firmware files from openwrt to immortalwrt
       run: |
-        for f in ${{ env.PACKAGED_OUTPUTPATH }}/*openwrt*; do
-          newname="${f//openwrt/immortalwrt}"
-          mv -- "$f" "$newname"
-          echo "Renamed $f → $newname"
+        cd "${{ env.PACKAGED_OUTPUTPATH }}"
+        for f in *openwrt*; do
+          mv -- "$f" "${f/openwrt/immortalwrt}"
         done
 
     - name: Upload firmware to release
@@ -119,9 +118,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         tag_name: ImmortalWrt_${{ env.PACKAGED_OUTPUTDATE }}
-        files: |
-          ${{ env.PACKAGED_OUTPUTPATH }}/*.img.xz
-          ${{ env.PACKAGED_OUTPUTPATH }}/*.img.xz.sha
+        files: ${{ env.PACKAGED_OUTPUTPATH }}/*.img.*
         body: |
           首次使用建议全新刷写
           * 基本信息

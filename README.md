@@ -11,8 +11,8 @@
 
 # 推荐教程
 
-- 不良林: [软路由篇](https://www.youtube.com/playlist?list=PL5TbbtexT8T293fBi4i5MOf4OjdLQ3hUa), [代理进阶篇](https://www.youtube.com/playlist?list=PL5TbbtexT8T3JJdJAy73A0T2NXZL2JEJY)
 - Aethersailor: [OpenClash设置方案](https://github.com/Aethersailor/Custom_OpenClash_Rules/wiki/OpenClash-%E8%AE%BE%E7%BD%AE%E6%96%B9%E6%A1%88)
+- 不良林: [软路由篇](https://www.youtube.com/playlist?list=PL5TbbtexT8T293fBi4i5MOf4OjdLQ3hUa), [代理进阶篇](https://www.youtube.com/playlist?list=PL5TbbtexT8T3JJdJAy73A0T2NXZL2JEJY)
 
 ---
 
